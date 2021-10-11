@@ -34,20 +34,15 @@ body {
 }
 
 h1,
-h2,
+h2 {
+	margin: 0;
+}
+
 h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-}
-
-main > h2:first-child {
-	margin-top: 0.5em;
-}
-
-h2 + h3 {
-	margin-top: 1em;
+	margin: 1em 0;
 }
 
 a:link,
