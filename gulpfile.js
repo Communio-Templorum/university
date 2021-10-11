@@ -590,7 +590,6 @@ gulp.task('generate:page', gulp.series(
 	canonicalRoute: '/${argv.sectionCC}${argv.nameCC}/',
 	route: '/${argv.sectionCC}${argv.nameCC}/?',
 }).on('load', () => {
-	console.log('Page loaded!');
 });\n`
 			return plugins.newFile(`ctrl.js`, str, { src: true })
 				.pipe(gulp.dest(`./src/pages/${argv.sectionCC}${argv.nameCC}`));

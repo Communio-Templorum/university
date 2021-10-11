@@ -2,5 +2,7 @@
 	"name": "Romanorum-Theological-College",
 	"components": [],
 	"sections": [],
-	"pages": []
+	"pages": [
+		"accreditation"
+	]
 }
