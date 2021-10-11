@@ -1,18 +1,18 @@
 {
-	"name": "Romanorum-Theological-College",
+	"name": "Romanorum-Theological-University",
 	"private": true,
 	"version": "0.0.1",
 	"description": "",
 	"main": "gulpfile.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Communio-Templorum/college.git"
+		"url": "git+https://github.com/Communio-Templorum/university.git"
 	},
 	"author": "Samuel B Grundman (https://github.com/YodasWs/)",
 	"bugs": {
-		"url": "https://github.com/Communio-Templorum/college/issues"
+		"url": "https://github.com/Communio-Templorum/university/issues"
 	},
-	"homepage": "https://github.com/Communio-Templorum/college#readme",
+	"homepage": "https://github.com/Communio-Templorum/university#readme",
 	"devDependencies": {
 		"@babel/core": "^7.5.5",
 		"@babel/preset-env": "^7.5.5",
