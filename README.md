@@ -1,20 +1,11 @@
-# webtoolkit
-Gulp toolkit to quickly and easily set up a Single Page Application
+# Romanorum Theological College
 
-## Initialization
+We are seeking to establish an accredited institution of higher education.
 
-Use the project as a repo template in GitHub [here](https://github.com/YodasWs/webtoolkit/generate).
-
-```bash
-yarn
-
-vim package.json
-
-gulp init -n <site title>
-```
-
-## Tasks
-
-```bash
-gulp -?
-```
+## Degrees to be offered
+* High School Equivalency Program
+* Associate of Arts (AA)
+* Associate of Arts in Teaching (AAT)
+* Bachelor of Education (BEd)
+* Bachelor of Religious Education (BRE)
+* Bachelor of Theology (BTh)
