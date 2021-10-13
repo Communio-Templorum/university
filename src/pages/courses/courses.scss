@@ -1,3 +1,13 @@
 [y-page='pageCourses'] {
-	/* SCSS Goes Here */
+	h2 {
+		margin-bottom: 1em;
+	}
+
+	details {
+		margin-bottom: 1.5em;
+	}
+
+	summary > h3 {
+		display: inline;
+	}
 }
