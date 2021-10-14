@@ -1,6 +1,14 @@
 [y-page='pageCourses'] {
-	h2 {
-		margin-bottom: 1em;
+	> header > h2 {
+		margin: 0;
+
+		+ strong {
+			display: block;
+			color: dimgrey;
+			margin-top: 0.3rem;
+			text-indent: 1rem;
+			font-size: 1.2rem;
+		}
 	}
 
 	details {

@@ -27,17 +27,26 @@ body {
 		padding: 5px calc(5px * 2.5);
 	}
 
+	main {
+		padding-top: 1rem;
+
+		> h2:first-child,
+		> p:first-child {
+			margin-top: 0;
+		}
+	}
+
 	> main,
 	> #y-spinner {
 		flex-grow: 1;
 	}
 }
 
-h1,
-h2 {
+h1 {
 	margin: 0;
 }
 
+h2,
 h3,
 h4,
 h5,
