@@ -1,10 +1,25 @@
-$header-color: black;
-$header-bg: lightgreen;
+$header-color: #76568f;
+$header-bg: white;
 $header-second-color: black;
 
+/*
+$colors: "#a88fbc" "#9c80b3" "#8f70a9" "#83609f" "#76568f" "#694d80" "#5b4370" "#57406a" "#4e3960";
+@for $i from 1 through length($colors) {
+	$color: nth($colors, $i);
+	body > header:nth-of-type(#{$i}) {
+		border-bottom: 10px double #{$color};
+		color: #{$color};
+	}
+}
+/**/
+
 body > header {
+	margin-bottom: 0.5rem;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
 	color: $header-color;
 	background: $header-bg;
+	border-bottom: 10px double $header-color;
 
 	h1 {
 		margin: 0;
