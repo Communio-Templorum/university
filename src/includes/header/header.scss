@@ -1,5 +1,5 @@
-$header-color: #76568f;
-$header-bg: white;
+$school-color-1: #76568f;
+$school-color-2: white;
 $header-second-color: black;
 
 /*
@@ -17,9 +17,9 @@ body > header {
 	margin-bottom: 0.5rem;
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	color: $header-color;
-	background: $header-bg;
-	border-bottom: 10px double $header-color;
+	color: $school-color-1;
+	background: $school-color-2;
+	border-bottom: 10px double $school-color-1;
 
 	h1 {
 		margin: 0;
