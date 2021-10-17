@@ -19,13 +19,28 @@ body {
 	max-width: 1200px;
 	min-height: 100%;
 	background: $school-color-2;
-	border: 0 none;
+	$school-border-width: 10px;
+	$school-border: $school-border-width double $school-color-1;
+	border: $school-border-width double $school-color-1;
 
-	border: double $school-color-1;
-	border-width: 0 10px;
+	border: $school-border;
+	border-width: 0 $school-border-width;
 
 	> * {
 		padding: 5px 10px;
+	}
+
+	> header {
+		margin-bottom: 0.5rem;
+		padding-top: 1rem;
+		padding-bottom: 0.5rem;
+		background: $school-color-2;
+		border-bottom: $school-border;
+
+		h1 {
+			color: $school-color-1;
+			margin: 0;
+		}
 	}
 
 	main {
@@ -40,6 +55,15 @@ body {
 	> main,
 	> #y-spinner {
 		flex-grow: 1;
+	}
+
+	> footer {
+		display: flex;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: $school-border;
+		flex-flow: row wrap;
+		justify-content: space-between;
 	}
 }
 
