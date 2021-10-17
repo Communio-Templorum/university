@@ -13,9 +13,16 @@
 
 	details {
 		margin-bottom: 1.5em;
+		padding-left: 1rem;
 	}
 
-	summary > h3 {
+	summary {
+		margin-bottom: 1rem;
+		margin-left: -1rem;
+	}
+
+	summary > h3,
+	summary > h4 {
 		display: inline;
 	}
 }
