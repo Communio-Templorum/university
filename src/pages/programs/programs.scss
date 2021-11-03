@@ -1,4 +1,4 @@
-[y-page='pagePrograms'] {
+[y-page="pagePrograms"] {
 	> header > h2 {
 		margin: 0;
 
@@ -24,5 +24,24 @@
 	summary > h3,
 	summary > h4 {
 		display: inline;
+	}
+
+	aside {
+		margin: 1em 0;
+		border-width: 1px 3px;
+		border-style: solid double;
+		border-color: $school-color-1;
+		padding: 4px 5px;
+		font-size: 0.8em;
+
+		@media #{$md} {
+			float: right;
+			width: 50%;
+			max-width: 200px;
+		}
+	}
+
+	h2 + aside {
+		margin-top: 0;
 	}
 }
