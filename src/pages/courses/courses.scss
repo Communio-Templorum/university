@@ -1,2 +1,10 @@
 [y-page='pageCourses'] {
+	details > ul {
+		padding-left: 20px;
+
+		ul {
+			margin-top: 0.1em;
+			margin-bottom: 1em;
+		}
+	}
 }
