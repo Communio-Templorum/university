@@ -431,15 +431,35 @@ function runTasks(task) {
 		fileType: 'css',
 	},
 	{
-		name: 'compile:js',
+		name: 'build:js',
 		src: [
 			'src/app.js',
 		],
 		tasks: [
 			'lintES',
 			'replaceString',
+		],
+		dest: 'build/',
+		fileType: 'js',
+	},
+	{
+		name: 'webpack:js',
+		src: [
+			'build/app.js',
+		],
+		tasks: [
 			'named',
 			'webpack',
+		],
+		dest: 'bundle/',
+		fileType: 'js',
+	},
+	{
+		name: 'minify:js',
+		src: [
+			'bundle/app.js',
+		],
+		tasks: [
 			'compileJS',
 			'rmLines',
 		],
@@ -482,6 +502,7 @@ export function lintSass() {
 		.pipe(plugins.lintSass(options.lintSass || {}))
 		.pipe(plugins.lintSass.format());
 };
+export { lintSass as 'lint:sass' };
 
 export function lintJs() {
 	return gulp.src([
@@ -492,6 +513,7 @@ export function lintJs() {
 		.pipe(plugins.lintES(options.lintES || {}))
 		.pipe(plugins.lintES.format());
 };
+export { lintJs as 'lint:js' };
 
 export const lint = gulp.parallel(lintSass, lintJs);
 
@@ -511,6 +533,17 @@ gulp.task('transfer-files', gulp.parallel(
 	'transfer:assets',
 	'transfer:fonts',
 	'transfer:res',
+));
+
+gulp.task('bundle:js', gulp.series(
+	'build:js',
+	'webpack:js',
+));
+
+gulp.task('compile:js', gulp.series(
+	lintJs,
+	'bundle:js',
+	'minify:js',
 ));
 
 gulp.task('compile', gulp.parallel('compile:html', 'compile:js', 'compile:sass', 'transfer-files'));
